@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>jQuery Parallax Plugin Demo</title>
+<title>PhotoClick ;)</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.parallax-1.1.js"></script>
@@ -12,6 +12,8 @@
 $(document).ready(function(){
 	$('#nav').localScroll(800);
 	
+	$('.scroll-link').localScroll(800);
+
 	RepositionNav();
 	
 	$(window).resize(function(){
@@ -34,17 +36,19 @@ $(document).ready(function(){
 
 <body>
 	<ul id="nav">
-		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+		<li><a href="#intro" title="Next Section">Apresentação<img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#second" title="Next Section">Como funciona?<img src="images/dot.png" alt="Link" /></a></li>
 	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#fifth" title="Next Section">Contato&nbsp;&nbsp;&nbsp;<img src="images/dot.png" alt="Link" /></a></li>
 	</ul>
 	
 	<div id="intro">
 		<div class="story">
-	    	<div class="float-left">
-			<h2>(Almost) Static Background</h2>
-	        <p>This section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position of the background for every pixel the page is scrolled.</p>
+	    	<div class="float-right">
+			<h2>fotoclick</h2>
+	        <p>A mais nova sensação de entretenimento de festas e eventos! Molduras divertidas e personalizadas para sua festa. Unimos o que há de mais avançado no mundo da tecnologia com design fluido. Admirado pelos britanicos... com design italiano... engenharia alemã, apresentamos o que há de melhor no Mundo, a Hyundai Foto-máquina. A melhor foto, do Mundo!</p>
+			<p>Entre em <a class="scroll-link" href="#fifth">contato</a> conosco para fazer uma reserva para seu evento!</p>
+
 	        </div>
 	    </div> <!--.story-->
 	</div> <!--#intro-->
@@ -52,9 +56,10 @@ $(document).ready(function(){
 	<div id="second">
 		<div class="story"><div class="bg"></div>
 	    	<div class="float-right">
-	            <h2>Multiple Backgrounds</h2>
-	            <p>The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
+	            <h2>Como funciona?</h2>
+	            <p>Basta um simples toque na tela e a foto é tirada</p>
 	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+	            <p>Integração com Facebook e Twitter</p>
 	        </div>
 	    </div> <!--.story-->
 	    
@@ -63,28 +68,30 @@ $(document).ready(function(){
 	<div id="third">
 		<div class="story">
 	    	<div class="float-left">
-	        	<h2>What Happens When JavaScript is Disabled?</h2>
-	            <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
+	        	<h2>Nossos clientes</h2>
+	            <p></p>
+
+	            <p></p>
 	        </div>
 	    </div> <!--.story-->
 	</div> <!--#third-->
 	
 	<div id="fifth">
 		<div class="story">
-	            <p>This demo is based on the <a href="http://www.nikebetterworld.com" title="Nike Better World">Nikebetterworld.com</a> website.</p>
 	            
-	        <h2>Credits</h2>
-	        <p>This plugin makes use of some scripts and images made by others:</p>
+	        <h2>Contato</h2>
+	        <p>Entre em contato conosco para mais informações sobre como alugar para seu evento, representação e franquias</p>
 	        <ul>
-	        	<li><a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html" title="jQuery ScrollTo">jQuery ScrollTo</a></li>
-	            <li><a href="http://www.fontdeck.com/" title="Licensed fonts from FontDeck">Licensed fonts from FontDeck</a></li>
-	            <li><a href="http://downloads.dvq.co.nz/" title="Background Textures">Wooden and Pyschedlic Background Textures</a></li>
-	            <li><a href="http://www.sxc.hu/photo/931435" title="Trainers Image">Trainers Image</a></li>
-	            <li><a href="http://www.sxc.hu/photo/1015485" title="Basketball Image">Basketball Image</a></li>
-	            <li><a href="http://www.sxc.hu/photo/563767" title="Bottles Image">Bottles Image</a></li>
+	        	<li>São Paulo (11) XXXX-XXXX</li>
+	            <li>Cuiabá (65) XXXX-XXXX</li>
+	            <li>Tokyo (11) XXXX-XXXX</li>
+	            <li>Moscow (11) XXXX-XXXX</li>
+	            <li>Londres (11) XXXX-XXXX</li>
+	            <li>New York (11) XXXX-XXXX</li>
+	            <li>Aquidauana (11) XXXX-XXXX</li>
+	            <li>Anastácio (11) XXXX-XXXX</li>
 	        </ul>
 	        
-	        <p class="center">P.S - You've scrolled <span id="pixels">0</span> Pixels. Oh Yeah!</p>
 	
 	    </div> <!--.story-->
 	</div> <!--#fifth-->
