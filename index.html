@@ -4,7 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>ClickPic ;)</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!-- <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel='stylesheet' type='text/css'> -->
+<script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.parallax-1.1.js"></script>
 <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
@@ -27,8 +29,8 @@ $(document).ready(function(){
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 	$('#intro').parallax("50%", 0, 0.1, true);
 	$('#second').parallax("50%", 0, 0.1, true);
-	$('.bg').parallax("50%", 2500, 0.4, true);
-	$('#third').parallax("50%", 2750, 0.3, true);
+	$('.bg').parallax("50%", 1800, 0.4, true);
+	$('#third').parallax("50%", 2000, 0.3, true);
 
 })
 </script>
@@ -36,10 +38,10 @@ $(document).ready(function(){
 
 <body>
 	<ul id="nav">
-		<li><a href="#intro" title="Next Section">Apresentação<img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#second" title="Next Section">Como funciona?<img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#fifth" title="Next Section">Contato&nbsp;&nbsp;&nbsp;<img src="images/dot.png" alt="Link" /></a></li>
+		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Apresentação</a></li>
+	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Como funciona?</a></li>
+	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Nossos clientes</a></li>
+	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Contato</a></li>
 	</ul>
 	
 	<div id="intro">
@@ -56,7 +58,7 @@ $(document).ready(function(){
 	<div id="second">
 		<div class="story"><div class="bg"></div>
 	    	<div class="float-right">
-	            <h2>Como funciona?</h2>
+	            <h1>Como funciona?</h1>
 	            <p>Basta um simples toque na tela e a foto é tirada</p>
 	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
 	            <p>Integração com Facebook e Twitter</p>
@@ -68,10 +70,16 @@ $(document).ready(function(){
 	<div id="third">
 		<div class="story">
 	    	<div class="float-left">
-	        	<h2>Nossos clientes</h2>
-	            <p></p>
+	        	<h1>Nossos clientes</h1>
+	        	<p>Pra falar a verdade ainda não temos muitos, mas queremos ter! Você pode ser um!</p>
+	            
 
-	            <p></p>
+	            <p>
+	            	<div class="clients">
+	            		<img src="images/rossi.png" width="230px"/>
+	            		<img src="images/pvshop.png" width="230px"/>
+	            	</div>
+	            </p>
 	        </div>
 	    </div> <!--.story-->
 	</div> <!--#third-->
@@ -79,7 +87,7 @@ $(document).ready(function(){
 	<div id="fifth">
 		<div class="story">
 	            
-	        <h2>Contato</h2>
+	        <h1>Contato</h1>
 	        <p>Entre em contato conosco para mais informações sobre como alugar para seu evento, representação e franquias</p>
 	        <ul>
 	        	<li>São Paulo (11) XXXX-XXXX</li>
