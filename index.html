@@ -3,13 +3,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>ClickPic ;)</title>
+
+<link href="bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="thickbox.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-<!-- <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel='stylesheet' type='text/css'> -->
 <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.parallax-1.1.js"></script>
 <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+
+<script type="text/javascript" src="scripts/bootstrap.js"></script>
+<script type="text/javascript" src="scripts/bootstrap-carousel.js"></script>
+<script type="text/javascript" src="scripts/bootstrap-scrollspy.js"></script>
+
+<script type="text/javascript" src="scripts/thickbox.js"></script>
+
+
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#nav').localScroll(800);
@@ -30,19 +40,23 @@ $(document).ready(function(){
 	$('#intro').parallax("50%", 0, 0.1, true);
 	$('#second').parallax("50%", 0, 0.1, true);
 	$('.bg').parallax("50%", 1800, 0.4, true);
-	$('#third').parallax("50%", 2000, 0.3, true);
+	$('#third').parallax("50%", 2400, 0.4, true);
 
 })
 </script>
 </head>
 
-<body>
-	<ul id="nav">
+<body data-spy="scroll" data-target="#navbar" data-offset="10">
+	
+<div id="navbar">
+	<ul id="nav" class="nav">
 		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Apresentação</a></li>
 	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Como funciona?</a></li>
+	    <li><a href="#galeria" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Galeria</a></li>
 	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Nossos clientes</a></li>
 	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Contato</a></li>
 	</ul>
+</div>
 	
 	<div id="intro">
 		<div class="story">
@@ -60,13 +74,69 @@ $(document).ready(function(){
 	    	<div class="float-right">
 	            <h1>Como funciona?</h1>
 	            <p>Basta um simples toque na tela e a foto é tirada</p>
-	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio.</p>
 	            <p>Integração com Facebook e Twitter</p>
 	        </div>
-	    </div> <!--.story-->
-	    
+       </div> <!--.story-->	    
+
 	</div> <!--#second-->
 	
+
+	<div id="galeria">
+		<div class="story">
+		<div class="float-left">
+			<h1>Galeria de fotos</h1>
+				<p>Veja nossa cabine de fotos em ação</p>
+				<br/><br/><br/>
+
+	    <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item"><center>
+                <a href="images/01g.jpg" title="Tela Touchscreen! Basta clicar na tela e pronto!" class="thickbox">
+                	<img src="images/01.jpg" alt="">
+            	</a></center>
+                <div class="carousel-caption">
+                  <h4>Tela Touchscreen</h4>
+                  <p>Basta clicar na tela e pronto!</p>
+                </div>
+              </div>
+              <div class="item"><center>
+              	<a href="images/04g.jpg" title="Foto impressa em 10 segundos!" class="thickbox">
+                <img src="images/04.jpg" alt="">
+            	</a></center>
+                <div class="carousel-caption">
+                  <h4>Foto impressa na hora</h4>
+                  <p>Leva apenas 10 segundos para a foto ficar pronta</p>
+                </div>
+              </div>
+              <div class="item"><center>
+              	<a href="images/02g.jpg" title="" class="thickbox">
+                <img src="images/02.jpg" alt="">
+            	</a></center>
+                <div class="carousel-caption">
+                  <h4>Terceira idade também pode!</h4>
+                  <p>Letras grandes na tela para quem nao enxerga</p>
+                </div>
+              </div>
+              <div class="item active"><center>
+              	<a href="images/02g.jpg" title="" class="thickbox">
+                <img src="images/03.jpg" alt="">
+            	</a></center>
+                <div class="carousel-caption">
+                  <h4>Ganhe uma revista!</h4>
+                  <p>Se você não sair bem na foto, pelo menos ganha uma revista!</p>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+          </div>
+
+      </div>
+
+		</div> <!-- story -->
+	</div> <!-- galeria -->
+
 	<div id="third">
 		<div class="story">
 	    	<div class="float-left">
@@ -102,6 +172,18 @@ $(document).ready(function(){
 	        
 	
 	    </div> <!--.story-->
+
+
+	    
+		
+
+
 	</div> <!--#fifth-->
+
+<script type="text/javascript">
+    $('#nav').scrollspy();
+    $('.carousel').carousel();
+</script>
+
 </body>
 </html>
