@@ -57,13 +57,13 @@ h2{
 }
 
 #myCarousel{
-	width:500px;
+	width:530px;
 	margin-left:100px;
 }
 
 #myCarousel .item{
-	width: 500px;
-	height: 320px;
+	width: 530px;
+	height: 360px;
 	margin:auto;
 }
 #myCarousel .item a{	
