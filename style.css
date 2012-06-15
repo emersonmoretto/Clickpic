@@ -168,14 +168,20 @@ h2{
 	overflow: hidden;
 	padding: 0;
 }
+
 #second .story{
 	color: black;
+	opacity: 0.8;	
+	border-radius:10px;
+	background-color: white;
+	margin-top:80px;
 	padding-left:40px;
+	
 }
 
 #second .bg{
 	background: url(images/trainers.png) 50% 0 no-repeat fixed;
-	height: 600px;
+	height: 520px;
 	margin: 0 auto;
 	padding: 0;
 	position: absolute;
