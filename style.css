@@ -69,8 +69,6 @@ h2{
 #myCarousel .item a{	
 	margin: auto;
 	width: 500px;
-	
-	border:1px solid red;
 }
 #myCarousel img{	
 	margin: auto;
@@ -187,9 +185,8 @@ h2{
 }
 
 #galeria{
-	background: url(images/metalgrid.jpg) 50% 0 repeat fixed;
-	color: white;
-	
+	background: url(images/galeria2.jpg) 50% 0 repeat fixed;
+	color: white;	
 	height: 600px;
 	padding: 0 0 0 0;	
 }

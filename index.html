@@ -24,7 +24,7 @@
 $(document).ready(function(){
 	$('#nav').localScroll(800);
 	
-	$('.scroll-link').localScroll(800);
+	$('#link').localScroll(800);
 
 	RepositionNav();
 	
@@ -40,6 +40,7 @@ $(document).ready(function(){
 	$('#intro').parallax("50%", 0, 0.1, true);
 	$('#second').parallax("50%", 0, 0.1, true);
 	$('.bg').parallax("50%", 1800, 0.4, true);
+	$('#galeria').parallax("50%", 1500, 0.4, true);
 	$('#third').parallax("50%", 2400, 0.4, true);
 
 })
@@ -63,7 +64,7 @@ $(document).ready(function(){
 	    	<div class="float-right">
 			<img src="images/logo.png"/>
 	        <p>A mais nova sensação de entretenimento de festas e eventos! Molduras divertidas e personalizadas para sua festa. Unimos o que há de mais avançado no mundo da tecnologia com design fluido. Admirado pelos britanicos... com design italiano... engenharia alemã, apresentamos o que há de melhor no Mundo, a Hyundai Foto-máquina. A melhor foto, do Mundo!</p>
-			<p>Entre em <a  href="#fifth">contato</a> conosco para fazer uma reserva para seu evento!</p>
+			<p id="link">Entre em <a style="text-decoration: underline;" href="#fifth">contato</a> conosco para fazer uma reserva para seu evento!</p>
 
 	        </div>
 	    </div> <!--.story-->
