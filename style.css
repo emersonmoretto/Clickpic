@@ -117,8 +117,8 @@ h2{
 }
 
 #second{
-	background: url(images/secondBG.png) 50% 0 no-repeat fixed;
-	color: #333;	
+	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
+	color: #111;	
 	height: 700px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -135,7 +135,7 @@ h2{
 	margin: 0 auto;
 	padding: 0;
 	position: absolute;
-	
+
 	width: 800px;
 	z-index: 200;
 }
