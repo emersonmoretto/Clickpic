@@ -149,7 +149,7 @@ h2{
 }
 
 
-#header, #intro, #second{
+#header, #intro, #comofunciona{
 	width: 100%;
 }
 
@@ -161,7 +161,16 @@ h2{
 	padding: 60px 0 0 0;
 }
 
-#second{
+#intro .story .float-right{
+	width: 420px;
+	font-size: 18px;
+}
+
+#intro .story .float-right p{	
+	font-size: 18px;
+}
+
+#comofunciona{
 	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
 	color: #111;	
 	height: 600px;
@@ -170,7 +179,7 @@ h2{
 	padding: 0;
 }
 
-#second .story{
+#comofunciona .story{
 	color: black;
 	opacity: 0.8;	
 	border-radius:10px;
@@ -180,7 +189,7 @@ h2{
 	
 }
 
-#second .bg{
+#comofunciona .bg{
 	background: url(images/trainers.png) 50% 0 no-repeat fixed;
 	height: 520px;
 	margin: 0 auto;
@@ -198,17 +207,17 @@ h2{
 	padding: 0 0 0 0;	
 }
 
-#third{
+#nossosclientes{
 	background: url(images/thirdBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 550px;
 	padding: 0 0 0 0;	
 }
 
-#fifth{
+#contato{
 	background: url(images/metalgrid.jpg) 50% 0 repeat fixed;
 	color: #ddd;
-	height: 400px;
+	height: 340px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
 }
