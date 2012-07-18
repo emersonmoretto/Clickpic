@@ -1,0 +1,9 @@
+application: clickpicbr
+version: 1
+runtime: java
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico

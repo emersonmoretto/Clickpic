@@ -181,7 +181,7 @@ h2{
 
 #comofunciona .story{
 	color: black;
-	opacity: 0.8;	
+	opacity: 0.95;	
 	border-radius:10px;
 	background-color: white;
 	margin-top:80px;
@@ -190,7 +190,7 @@ h2{
 }
 
 #comofunciona .bg{
-	background: url(images/trainers.png) 50% 0 no-repeat fixed;
+	background: url(images/foto.png) 50% 0 no-repeat fixed;
 	height: 520px;
 	margin: 0 auto;
 	padding: 0;
@@ -203,7 +203,7 @@ h2{
 #galeria{
 	background: url(images/galeria2.jpg) 50% 0 repeat fixed;
 	color: white;	
-	height: 600px;
+	height: 700px;
 	padding: 0 0 0 0;	
 }
 
