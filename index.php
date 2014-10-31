@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!-- 
+Se voce esta vendo isso eh sinal que gostou do site, 
+e isso eh um sinal de prestigio para o desenvolvedor, 
+obrigado pela visita
+-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ClickPic ;)</title>
+
+<link href="bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="thickbox.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+
+<script type="text/javascript" src="scripts/bootstrap.js"></script>
+<script type="text/javascript" src="scripts/bootstrap-carousel.js"></script>
+<script type="text/javascript" src="scripts/bootstrap-scrollspy.js"></script>
+
+<script type="text/javascript" src="scripts/thickbox.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);	
+	$('.link').localScroll(800);
+
+	RepositionNav();
+	
+	$(window).resize(function(){
+		RepositionNav();
+	});		
+	
+	$('#intro').parallax("50%", 0, 0.1, true);
+	$('#comofunciona').parallax("50%", 0, 0.1, true);
+	$('.bg').parallax("50%", 1800, 0.4, true);
+	$('#galeria').parallax("50%", 1500, 0.4, true);
+	$('#nossosclientes').parallax("50%", 2650, 0.4, true);
+})
+</script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="10">
+	
+<div id="navbar">
+	<ul id="nav" class="nav">
+		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Apresentação</a></li>
+	    <li><a href="#comofunciona" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Como funciona?</a></li>
+	    <li><a href="#galeria" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Galeria</a></li>
+	    <li><a href="#nossosclientes" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Nossos clientes</a></li>
+	    <li><a href="#contato" title="Next Section"><img src="images/dot.png" alt="Link" />&nbsp;Contato</a></li>
+	</ul>
+</div>
+	
+	<div id="intro">
+		<div class="story">
+	    	<div class="float-right">
+			<img src="images/clickpic.png"/>			
+	        <p>A mais nova sensação de entretenimento em festas e eventos!</p>
+	        <p>Dê aos seus convidados uma lembrança especial do seu evento, uma foto personalizada que é impressa na hora!</p>
+	        <p>Basta um toque na tela e a foto é tirada e impressa, com molduras divertidas e personalizadas, efeitos, envio por e-mail e compartilhamento em redes sociais.</p>
+			<p class="link">Entre em <a style="text-decoration: underline;" href="#contato">contato</a> conosco para fazer uma reserva para seu evento!</p>
+
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#intro-->
+	
+	<div id="comofunciona">
+		<div class="story"><div class="bg"></div>
+	    	<div class="float-right" style="padding-top:30px">
+	            <h1>Como funciona?</h1>
+	            <p>Basta um simples toque na tela e a foto é tirada</p>
+	            <p>Em 10 segundos a foto é impressa em tamanho 10x15cm em papel fotográfico Fuji&trade;</p>
+	            <p>O usuário recebe a foto por e-mail em instantes além de poder compartilhar sua foto via Facebook&trade; e Twitter&trade;</p>
+	            <p><img src="images/facebook.png"/> <img src="images/twitter.png"/></p>
+	            <p>Além disso, as molduras são personalizadas para ficar com a cara do seu evento!</p>
+	            <p>Também é possível aplicar filtros de imagem como no Instagram&trade;</p>
+	        </div>
+       </div> <!--.story-->	    
+
+	</div> <!--#comofunciona-->
+	
+
+	<div id="galeria">
+		<div class="story">
+		<div class="float-left">
+			<h1>Galeria de fotos</h1>
+				<p>Veja nossa cabine de fotos em ação</p>
+				<br/><br/><br/>
+
+	    <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item active"><center>
+                <a href="images/01g.jpg" title="Tela Touchscreen! Basta clicar na tela e pronto!" class="thickbox">
+                	<img src="images/01.jpg" alt="">
+            	</a></center>
+                <div class="carousel-caption">
+                  <h4>Tela Touchscreen</h4>
+                  <p>Toda a interatividade é via touchscreen, mais ágil, prático e moderno</p>
+                </div>
+              </div>
+              <div class="item"><center>
+              	<a href="images/04g.jpg" title="Foto impressa em 10 segundos!" class="thickbox">
+                <img src="images/04.jpg" alt="">
+            	</a></center>
+                <div class="carousel-caption">
+                  <h4>Foto impressa na hora</h4>
+                  <p>Leva apenas 10 segundos para a foto ficar pronta</p>
+                </div>
+              </div>
+              <div class="item"><center>
+              	<a href="images/02g.jpg" title="" class="thickbox">
+                <img src="images/02.jpg" alt="">
+            	</a></center>
+                <div class="carousel-caption">
+                  <h4>Social</h4>
+                  <p>A foto pode ser compartilhada via Facebook&trade; na hora</p>
+                </div>
+              </div>
+              
+
+			  <div class="item"><center>
+              	<a href="images/06g.jpg" title="" class="thickbox">
+                <img src="images/06.jpg" alt="">
+            	</a></center>
+                <div class="carousel-caption">
+                  <h4>Personalizável</h4>
+                  <p>Deixe a cabine fotográfica com a cara do seu evento!</p>
+                </div>
+              </div>
+
+              <div class="item"><center>
+              	<a href="images/05g.jpg" title="" class="thickbox">
+                <img src="images/05.jpg" alt="">
+            	</a></center>
+                <div class="carousel-caption">
+                  <h4>Molduras na foto</h4>
+                  <p>As fotos também possuem molduras de acordo com o evento</p>
+                </div>
+              </div>
+
+              <div class="item"><center>
+              	<a href="images/03g.jpg" title="" class="thickbox">
+                <img src="images/03.jpg" alt="">
+            	</a></center>
+                <div class="carousel-caption">
+                  <h4>Faça a reserva para seu evento</h4>
+                  <p>Eventos corporativos, feiras, casamentos, aniversários...</p>
+                </div>
+              </div>
+
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+          </div>
+
+      </div>
+
+		</div> <!-- story -->
+	</div> <!-- galeria -->
+
+	<div id="nossosclientes">
+		<div class="story">
+	    	<div class="float-left">
+	        	<h1>Nossos clientes</h1>
+	        	<p class="link">Seja também nosso cliente e/ou parceiro, entre em <a style="text-decoration: underline;" href="#contato">contato</a> </p>
+	            <p>
+	            	<div class="clients">
+	            		<img src="images/rossi.png" width="230px"/>
+	            		<img src="images/estudiomaraes.jpg" width="230px"/>
+	            	</div>
+	            </p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#nossosclientes-->
+	
+	<div id="contato">
+		<div class="story">
+	            
+	        <h1>Contato</h1>
+	        <p>Entre em contato conosco para mais informações sobre como alugar para seu evento, representação e franquias</p>
+	        <p>contato@clickpic.com.br</p>
+	        <ul>	        		        	
+	            <li>Cuiabá (65) 3642-7605 / 9232-7684</li>
+	            <li>Campo Grande (67) 8441-2222</li>
+		<li>Goiânia (62) 9282-1509</li>	            
+<li>São Paulo (11) 9484-0571</li>
+	        </ul>
+	        
+	
+	    </div> <!--.story-->	    	    
+	    <br/><br/><br/><br/><br/><br/>
+		<center><p style="font-size: 11px; display:block; opacity:0.4;"><a target="_blank" href="http://www.moretto.eng.br/">moretto.eng.br</a></p></center>
+	</div> <!--#contato-->
+<script type="text/javascript">
+    $('#nav').scrollspy();
+    $('.carousel').carousel();
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-32738324-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>

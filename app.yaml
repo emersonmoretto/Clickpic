@@ -5,9 +5,6 @@ runtime: php
 threadsafe: true
 
 handlers:
-- url: /images
-  static_dir: images
-
 - url: /.*
   script: index.php
 
