@@ -5,6 +5,4 @@ runtime: php
 threadsafe: true
 
 handlers:
-- url: /.*
-  script: index.php
 
