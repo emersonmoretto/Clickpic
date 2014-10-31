@@ -1,7 +1,7 @@
 application: clickpicbr
 api_version: 1
 version: 1
-runtime: java
+runtime: php
 threadsafe: true
 
 handlers:
