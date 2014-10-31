@@ -1,12 +1,5 @@
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-<!-- 
-Se voce esta vendo isso eh sinal que gostou do site, 
-e isso eh um sinal de prestigio para o desenvolvedor, 
-obrigado pela visita
--->
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>ClickPic ;)</title>
