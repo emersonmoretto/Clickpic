@@ -5,6 +5,9 @@ runtime: php
 threadsafe: true
 
 handlers:
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
+- url: /images
+  static_dir: images
+
+- url: /.*
+  script: index.html
+
