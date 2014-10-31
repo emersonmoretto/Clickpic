@@ -7,46 +7,46 @@ threadsafe: true
 handlers:
 - url: /(.*\.css)
   mime_type: text/css
-  www_files: www/\1
+  static_files: www/\1
   upload: www/(.*\.css)
 
 - url: /(.*\.html)
   mime_type: text/html
-  www_files: www/\1
+  static_files: www/\1
   upload: www/(.*\.html)
 
 - url: /(.*\.js)
   mime_type: text/javascript
-  www_files: www/\1
+  static_files: www/\1
   upload: www/(.*\.js)
 
 - url: /(.*\.txt)
   mime_type: text/plain
-  www_files: www/\1
+  static_files: www/\1
   upload: www/(.*\.txt)
 
 - url: /(.*\.xml)
   mime_type: application/xml
-  www_files: www/\1
+  static_files: www/\1
   upload: www/(.*\.xml)
 
 # image files
 - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png))
-  www_files: www/\1
+  static_files: www/\1
   upload: www/(.*\.(bmp|gif|ico|jpeg|jpg|png))
 
 # index files
 - url: /(.+)/
-  www_files: www/\1/index.html
+  static_files: www/\1/index.html
   upload: www/(.+)/index.html
 
 # redirect to 'url + /index.html' url.
 - url: /(.+)
-  www_files: www/redirector.html
+  static_files: www/redirector.html
   upload: www/redirector.html
 
 # site root
 - url: /
-  www_files: www/index.html
+  static_files: www/index.html
   upload: www/index.html
 
