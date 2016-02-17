@@ -1,2 +1,8 @@
-appcfg.sh -e emerson@moretto.eng.br update www
+#setup
+mvn install
 
+#test
+mvn appengine:devserver
+
+#deploy
+mvn appengine:update
